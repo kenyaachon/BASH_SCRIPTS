@@ -37,3 +37,13 @@ grep export ~/.bashrc | grep '\<PATH'
 repeat '-';
 printf "\n---------------------Pattern Matching--------------------\n"
 repeat '-';
+
+printf "\n Character ranges \n"
+touch "*"
+ls "*"
+rm "*"
+
+printf "\n Character classes \n"
+ls -l [[:ascii:]]*
+
+ls -l [[:upper:]]*
