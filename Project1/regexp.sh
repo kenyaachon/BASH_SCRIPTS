@@ -2,6 +2,13 @@
 
 # using regular expressions
 # displays the lines from /etc/passwd containing
+repeat() {
+    for i in {1..60}; do echo -n "$1"; done
+}
+repeat '-';
+printf "\n ------------------------Examples using grep---------------\n"
+repeat '-';
+
 printf "\n result for grep root /etc/passwd"
 grep root /etc/passwd
 
@@ -26,3 +33,7 @@ grep :$ /etc/passwd
 # MANPATH and other possible paths
 printf "\n result for grep export ~/.bashrc | grep '\<PATH' \n"
 grep export ~/.bashrc | grep '\<PATH'
+
+repeat '-';
+printf "\n---------------------Pattern Matching--------------------\n"
+repeat '-';
